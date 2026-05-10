@@ -25,7 +25,7 @@
            ▼                              ▼
 ┌──────────────────┐          ┌──────────────────────────┐
 │   PostgreSQL     │          │  LLM API (OpenAI-compat) │
-│   (pgx/v5)       │          │  http://43.133.61.163    │
+│   (pgx/v5)       │          │  https://api.openai.com  │
 └──────────────────┘          └──────────────────────────┘
            │
            ▼
@@ -131,8 +131,8 @@ JWT_SECRET=your-secret-key-here
 JWT_EXPIRY_HOURS=24
 UPLOAD_DIR=./uploads
 MAX_FILE_SIZE_MB=10
-LLM_BASE_URL=http://43.133.61.163:8787/v1
-LLM_API_KEY=sk-pool
+LLM_BASE_URL=https://api.openai.com/v1
+LLM_API_KEY=your-api-key-here
 LLM_MODEL=claude-sonnet-4.6
 LLM_TIMEOUT_SECONDS=60
 PORT=8080

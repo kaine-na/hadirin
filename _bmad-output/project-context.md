@@ -17,8 +17,8 @@
 | LLM | Custom OpenAI-compatible API |
 
 ## LLM Configuration
-- **Base URL:** `http://43.133.61.163:8787/v1`
-- **API Key:** `sk-pool`
+- **Base URL:** `https://api.openai.com/v1` (configurable via `LLM_BASE_URL`)
+- **API Key:** set via `LLM_API_KEY` environment variable
 - **Model:** `claude-sonnet-4.6`
 - **Penggunaan:** AI HRD Dashboard — analisis kinerja karyawan
 

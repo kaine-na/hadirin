@@ -63,7 +63,7 @@ Tidak ditemukan logic errors yang memblokir fungsionalitas.
 **File:** `backend/pkg/config/config.go` baris 37
 
 ```go
-LLMBaseURL: getEnv("LLM_BASE_URL", "http://43.133.61.163:8787/v1"),
+LLMBaseURL: getEnv("LLM_BASE_URL", "https://api.openai.com/v1"),
 ```
 
 IP address hardcoded sebagai default value. Jika IP berubah atau tidak tersedia, fitur HR AI akan gagal. Sebaiknya default dikosongkan dan ada validasi bahwa `LLM_BASE_URL` wajib diset di production.
