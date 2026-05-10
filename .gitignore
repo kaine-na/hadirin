@@ -1,0 +1,25 @@
+# Backend binary
+backend/server
+
+# Environment files
+backend/.env
+frontend/.env
+
+# Uploads
+backend/uploads/
+
+# PostgreSQL data directory
+.pgdata/
+
+# Frontend
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+
+# Logs & temp
+*.log
+*.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
