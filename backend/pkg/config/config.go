@@ -30,7 +30,7 @@ func Load() *Config {
 
 	return &Config{
 		DatabaseURL:       getEnv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/saas_karyawan?sslmode=disable"),
-		JWTSecret:         getEnv("JWT_SECRET", "change-this-secret-in-production"),
+		JWTSecret:         getEnv("JWT_SECRET", ""),
 		JWTExpiryHours:    getEnvInt("JWT_EXPIRY_HOURS", 24),
 		UploadDir:         getEnv("UPLOAD_DIR", "./uploads"),
 		MaxFileSizeMB:     int64(getEnvInt("MAX_FILE_SIZE_MB", 10)),
